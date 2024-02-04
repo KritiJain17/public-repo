@@ -1,0 +1,25 @@
+body {
+  background-color: #000;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  width: 80%;
+  margin-top: 2rem;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#light {
+
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: absolute;
+  background-image: radial-gradient(#ffffff, #fffff0);
+  box-shadow: 0 0 200px 20px #ffffff;
+}
