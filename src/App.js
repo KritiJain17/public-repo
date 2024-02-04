@@ -11,11 +11,11 @@ function App() {
     });
   };
 
-  function handleTouchMove(event) {
-    event.preventDefault(); // Prevent scrolling
-    const touch = event.targetTouches[0];
-    handleEvent(touch);
-  }
+  // function handleTouchMove(event) {
+  //   event.preventDefault(); // Prevent scrolling
+  //   const touch = event.targetTouches[0];
+  //   handleEvent(touch);
+  // }
 
   function handleEvent(event) {
     const x = event.pageX || event.clientX;
@@ -27,11 +27,11 @@ function App() {
 
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("touchmove", handleTouchMove);
+    // document.addEventListener("touchmove", handleTouchMove);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
-      document.removeEventListener("touchmove", handleTouchMove);
+      //document.removeEventListener("touchmove", handleTouchMove);
     };
   }, []);
 
