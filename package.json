@@ -18,7 +18,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "postdeploy": "rm -rf node_modules/gh-pages/.cache"
+    "postdeploy": "rmdir /s /q node_modules\\gh-pages\\.cache"
   },
   "eslintConfig": {
     "extends": [
